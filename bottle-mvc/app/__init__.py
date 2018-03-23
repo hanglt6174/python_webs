@@ -4,4 +4,5 @@ from bottle import Bottle, TEMPLATE_PATH
 app = Bottle()
 TEMPLATE_PATH.append("./app/views/")
 TEMPLATE_PATH.remove("./views/")
-from project.controllers import *
+
+from app.controllers import *
